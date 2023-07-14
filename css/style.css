@@ -143,14 +143,14 @@ body.popup-open .hero__text {
   top: 0;
   left: 0;
   overflow: hidden;
-  max-width: 100vw;
-  max-height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .body-contacts {
   overflow: hidden;
-  max-width: 100vw;
-  max-height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .wrapper {
@@ -300,7 +300,7 @@ body.popup-open .hero__text {
 }
 
 .header.header-main .header__logo svg path {
-  fill: red;
+  fill: #fff;
 }
 
 .header.header-main .header__body {
@@ -318,11 +318,6 @@ body.popup-open .hero__text {
 }
 
 .header.header-menu .header__list li:nth-child(1) a {
-  pointer-events: none;
-  cursor: default;
-}
-
-.header.header-contacts .header__list li:nth-child(2) a {
   pointer-events: none;
   cursor: default;
 }
@@ -599,21 +594,21 @@ body.popup-open .hero__text {
 }
 
 .contacts {
+  position: absolute;
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
 }
 
 .contacts__info {
   position: relative;
-  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   width: 50%;
-  height: 100%;
 }
 
 .contacts__logo {
@@ -680,10 +675,6 @@ body.popup-open .hero__text {
 .contacts__map {
   width: 50%;
   height: 100%;
-}
-
-.contacts__map iframe {
-  height: 100vh;
 }
 
 .booking {
@@ -998,18 +989,18 @@ body.popup-open .hero__text {
   }
 
   .contacts {
-    height: 200vh;
+    height: 200%;
     flex-direction: column;
   }
 
   .contacts__info {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 50%;
   }
 
   .contacts__map {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 50%;
     position: relative;
   }
 
